@@ -10,7 +10,7 @@ prepABEL is programmed to be run on supercomputer resources, but can be easily a
 
 prepABEL may also be modified to chunk the output files into smallers files if lack of memory is a limit to run ProbABEL with large genomic predictor files. An example script to perfom the chunking is provided too.
 
-prepABEL is being presented in the ATS 2017 Conference in Washington, 19-24 May, 2017.
+prepABEL is being presented in the ATS 2017 Conference in Washington, 19-24 May, 2017. It has been developed by our staff at the Genomics Divion of the Institute of Energy and Renewable Energy (ITER), Tenerife, Canary Islands, SPAIN.
 
 prepABEL will be available for downloading in June 1st, 2017. Please, feel free to contact me at "jlorsal" @ "gmail.com".
 
