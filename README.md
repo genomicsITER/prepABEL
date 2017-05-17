@@ -12,5 +12,5 @@ prepABEL may also be modified to chunk the output files into smallers files if l
 
 prepABEL is being presented in the ATS 2017 Conference in Washington, 19-24 May, 2017.
 
-prepABEL will be available for downloading in June 1st, 2017.
+prepABEL will be available for downloading in June 1st, 2017. Please, feel free to contact me at "jlorsal" @ "gmail.com".
 
