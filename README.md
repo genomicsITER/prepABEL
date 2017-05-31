@@ -112,15 +112,15 @@ module load probAbel/0.5
 # Do not include file extensions
 #chromosome="chr1" # <--- UPDATE this variable with each chromosome under analysis if running in local mode
 
-echo "============================================================================"
-echo "=== 				                      prepABEL 				                       ==="
-echo "===	 			                           v1	 			                           ==="
-echo "===      A program to prepare files for ProbABEL survival analyses       ==="
-echo "===  with dosage VCF imputation files from Michigan Imputation Server    ==="
-echo "===         See more at: https://github.com/genomicsITER/prepABEL        ==="
-echo "===                           Genomics Division                          ==="
-echo "===       Institute of Technology and Renewable Energy (ITER) 2017       ==="
-echo "============================================================================"
+echo "====================================================================="
+echo "=== prepABEL"
+echo "===	v1"
+echo "=== A program to prepare files for ProbABEL survival analyses"
+echo "=== with dosage VCF imputation files from Michigan Imputation Server"
+echo "=== See more at: https://github.com/genomicsITER/prepABEL"
+echo "=== Genomics Division"
+echo "=== Institute of Technology and Renewable Energy (ITER) 2017"
+echo "====================================================================="
 echo ""
 echo ""
 
