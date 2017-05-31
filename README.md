@@ -27,8 +27,9 @@ Please, cite prepABEL as follows:
 
 # PrepABEL: A Bioinformatic Tool for Preprocessing Imputed Genotype Dosage Data for Survival Analyses
 
+J. Lorenzo-Salazar, S.F. Ma, J. M. Oldham, I. Noth, and C. Flores
+
 American Thoracic Society International Conference, A6796
 
 May 19-24, 2017, Washington DC, USA
 
-J. Lorenzo-Salazar, S.F. Ma, J. M. Oldham, I. Noth, and C. Flores
