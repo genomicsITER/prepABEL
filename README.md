@@ -35,7 +35,7 @@ May 19-24, 2017, Washington DC, USA
 
 
 # Code
-
+```
 #!/bin/bash
 # --------------------------------------------------------------------------------------------------------
 # The following code is to be executed in a HPC infraestructure working with SLURM
@@ -357,3 +357,4 @@ pacoxph -p $phenotypes/probabel.phenotypes \
 -o $coxph/probabel.$gp_filename.coxph
 
 # End of script
+'''
