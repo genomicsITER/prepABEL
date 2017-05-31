@@ -43,6 +43,8 @@ May 19-24, 2017, Washington DC, USA
 <br>
 
 # Code
+**prepABEL** code is shown below. Copy and paste this code into a plain-text file and name it as 'prepABEL.sh'. An example is provided here: https://github.com/genomicsITER/prepABEL/blob/master/prepABEL_v1.sh
+
 ```Bash
 #!/bin/bash
 # --------------------------------------------------------------------------------------------------------
@@ -369,3 +371,10 @@ pacoxph -p $phenotypes/probabel.phenotypes \
 
 # End of script
 '''
+
+# How to run prepABEL
+To run **prepABEL**, open a shell console (in most Linux systems, press CTRL+ALT+T keys simultaneously) and call BASH as follows:
+```
+bash prepABEL_v1.sh
+```
+
