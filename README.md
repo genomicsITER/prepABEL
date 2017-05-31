@@ -12,7 +12,7 @@ A simple script combining BASH line commands to grab data from dosage VCF files 
 
 **prepABEL** may also be modified to chunk the output files into smallers files if lack of memory is a limit to run _ProbABEL_ with large genomic predictor files. An example script to perfom the chunking is provided too.
 
-Some other tools such as VCFtools (https://vcftools.github.io) lets one to grab defined fields (see --extract-FORMAT-info filtering options) and thus extract a large matrix of genotypes or imputed genotype doses (or probabilities), but still a matrix tranpose operation is required to work with _ProABEL_. And it needs installation while **prepABEL** runs as is!
+Some other tools such as VCFtools (https://vcftools.github.io) lets one to grab defined fields (see _--extract-FORMAT-info_ filtering options) and thus extract a large matrix of genotypes or imputed genotype doses (or probabilities), but still a matrix tranpose operation is required to work with _ProABEL_. And it needs installation while **prepABEL** runs as is!
 
 **prepABEL** has been presented in the ATS 2017 Conference in Washington, 19-24 May, 2017. It has been developed by our staff at the Genomics Divion of the Institute of Energy and Renewable Energy (ITER), Tenerife, Canary Islands, SPAIN.
 
