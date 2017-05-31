@@ -36,7 +36,7 @@ Some other tools such as VCFtools (https://vcftools.github.io) lets one to grab 
 **prepABEL** code is available below. Please, feel free to contact me at "jlorsal" @ "gmail.com" for any further information. 
 <br>
 <br>
-<br>
+
 
 # Citation
 ----------
@@ -51,7 +51,7 @@ American Thoracic Society International Conference, A6796
 May 19-24, 2017, Washington DC, USA
 <br>
 <br>
-<br>
+
 
 # How to run prepABEL
 ---------------------
@@ -63,7 +63,7 @@ bash prepABEL_v1.sh
 ```
 <br>
 <br>
-<br>
+
 
 # Code
 ------
@@ -389,6 +389,8 @@ pacoxph -p $phenotypes/probabel.phenotypes \
 
 # End of script
 ```
+<br>
+<br>
 
 
 # Who is using prepABEL
