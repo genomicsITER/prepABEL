@@ -51,7 +51,23 @@ American Thoracic Society International Conference, A6796
 May 19-24, 2017, Washington DC, USA
 <br>
 <br>
+<br>
 
+
+# Who is using prepABEL
+---------------------
+**prepABEL** has been already used succesfully to perform a Genome-Wide Association Study of Survival in Patients with Idiopathic Pulmonary Fibrosis (IPF) in a subset of patients of European ancestry from a recent IPF GWAS, working with VCF files of about 1,000 individuals by 39 million variants.
+See:
+## _Genome-Wide Association Study of Survival in Patients with Idiopathic Pulmonary Fibrosis_
+
+American Thoracic Society International Conference, A7649
+
+May 19-24, 2017, Washington DC, USA
+
+J. M. Oldham, R. Allen, J. Lorenzo-Salazar, S. F. Ma, Y. Huang, Y. Zhang, N. Kaminski, M. Seldin, M. D. Tobin, C. Flores, L. V. Wain, R. G. Jenkins, and I. Noth
+<br>
+<br>
+<br>
 
 # How to run prepABEL
 ---------------------
@@ -63,7 +79,7 @@ bash prepABEL_v1.sh
 ```
 <br>
 <br>
-
+<br>
 
 # Code
 ------
@@ -389,18 +405,4 @@ pacoxph -p $phenotypes/probabel.phenotypes \
 
 # End of script
 ```
-<br>
-<br>
 
-
-# Who is using prepABEL
----------------------
-**prepABEL** has been already used succesfully to perform a Genome-Wide Association Study of Survival in Patients with Idiopathic Pulmonary Fibrosis (IPF) in a subset of patients of European ancestry from a recent IPF GWAS, working with VCF files of about 1,000 individuals by 39 million variants.
-See:
-## _Genome-Wide Association Study of Survival in Patients with Idiopathic Pulmonary Fibrosis_
-
-American Thoracic Society International Conference, A7649
-
-May 19-24, 2017, Washington DC, USA
-
-J. M. Oldham, R. Allen, J. Lorenzo-Salazar, S. F. Ma, Y. Huang, Y. Zhang, N. Kaminski, M. Seldin, M. D. Tobin, C. Flores, L. V. Wain, R. G. Jenkins, and I. Noth
