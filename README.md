@@ -27,7 +27,7 @@ Some other tools such as VCFtools (https://vcftools.github.io) lets one to grab 
 </p>
 <p><br></p>
 <p align="center">
-**Figure 1**. **prepABEL** is able to transpose vcf data into a genomic predictor file (a), and capture selected columns to prepare an INFO SNP (b) and MAP (c) files to conduct survival analysis.
+<b>Figure 1. prepABEL</b> is able to transpose vcf data into a genomic predictor file (a), and capture selected columns to prepare an INFO SNP (b) and MAP (c) files to conduct survival analysis.
 </p>
 <br>
 <br>
