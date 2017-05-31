@@ -21,6 +21,7 @@ prepABEL code is available below. Please, feel free to contact me at "jlorsal" @
 <b>Figure 1</b>. PrepABEL is able to transpose vcf data into a genomic predictor file (a), and capture selected columns to prepare an INFO SNP (b) and MAP (c) files to conduct survival analysis.
 
 
+
 # _Citation_
 
 Please, cite prepABEL as follows:
@@ -32,6 +33,7 @@ J. Lorenzo-Salazar, S.F. Ma, J. M. Oldham, I. Noth, and C. Flores
 American Thoracic Society International Conference, A6796
 
 May 19-24, 2017, Washington DC, USA
+
 
 
 # Code
