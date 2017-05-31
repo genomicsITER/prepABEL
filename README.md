@@ -374,7 +374,7 @@ pacoxph -p $phenotypes/probabel.phenotypes \
 
 # How to run prepABEL
 To run **prepABEL**, open a shell console (in most Linux systems, press CTRL+ALT+T keys simultaneously) and call BASH as follows:
-```
+'''
 bash prepABEL_v1.sh
-```
+'''
 
