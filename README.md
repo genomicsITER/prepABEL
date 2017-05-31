@@ -35,12 +35,12 @@ May 19-24, 2017, Washington DC, USA
 
 
 # Code
-```
+```Bash
 #!/bin/bash
 # --------------------------------------------------------------------------------------------------------
 # The following code is to be executed in a HPC infraestructure working with SLURM
-# Delete code betweeb dashed lines if a local environment will be used instead
-# Test this code with an autosomal chromosome to check that everything runs smoothly
+# Delete code between dashed lines if a local environment will be used instead
+# Test this code with a chromosome to check that everything runs smoothly
 # Read the first element of the command line array to grab the chromosome number from prepABEL_launcher.sh
 chromosome=chr$1  # $1 grabs the first element of shell command line array
 #SBATCH -J prepABEL
