@@ -365,7 +365,7 @@ mv $output/probabel.$gp_filename.spaces.info $output/probabel.$gp_filename.info
 mv $output/probabel.$gp_filename.spaces.gp $output/probabel.$gp_filename.gp
 mv $output/probabel.$gp_filename.spaces.map $output/probabel.$gp_filename.map
 
-echo "================================ End of Script ================================"
+echo "================================ End of prepABEL Script ================================ "
 
 
 # ########################################### #
