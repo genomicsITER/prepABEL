@@ -27,6 +27,7 @@ Some other tools such as VCFtools (https://vcftools.github.io) lets one to grab 
 <b>Figure 1</b>. **PrepABEL** is able to transpose vcf data into a genomic predictor file (a), and capture selected columns to prepare an INFO SNP (b) and MAP (c) files to conduct survival analysis.
 <br>
 <br>
+<br>
 
 # _Citation_
 
@@ -41,6 +42,7 @@ American Thoracic Society International Conference, A6796
 May 19-24, 2017, Washington DC, USA
 <br>
 <br>
+<br>
 
 # How to run prepABEL
 **prepABEL** code is shown below. Copy and paste this code into a plain-text file and name it as 'prepABEL.sh'. An example is provided here: https://github.com/genomicsITER/prepABEL/blob/master/prepABEL_v1.sh
@@ -49,6 +51,9 @@ To run **prepABEL**, open a shell console (in most Linux systems, press CTRL+ALT
 ```bash
 bash prepABEL_v1.sh
 ```
+<br>
+<br>
+<br>
 
 # Code
 
