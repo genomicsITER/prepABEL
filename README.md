@@ -347,15 +347,11 @@ echo "================================ Replace tabs with spaces. Ending of prepA
 # Replace missing data with 'NA' within phenotype file. If necessary, uncomment next line
 #awk 'BEGIN { FS = OFS = "\t" } { for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i = "NA" }; 1' $phenotypes/phenotypes_revised.csv > $phenotypes/phenotypes_revised_noNA.csv
 
-# Replace tabs with spaces, if needed
+# Replace tabs with spaces, if needed (note: 'tr' pipelined to 'cat' does the same)
 echo "Replacing tabs by spaces in ProABEL prepared files..."
-
 awk '{$1=$1}1' OFS=" " $output/probabel.$gp_filename.info > $output/probabel.$gp_filename.spaces.info
-
 awk '{$1=$1}1' OFS=" " $output/probabel.$gp_filename.gp > $output/probabel.$gp_filename.spaces.gp
-
 awk '{$1=$1}1' OFS=" " $output/probabel.$gp_filename.map > $output/probabel.$gp_filename.spaces.map
-
 
 # Discard files with tabs and keep files with spaces as delimiters
 rm -f $output/probabel.$gp_filename.info $output/probabel.$gp_filename.gp $output/probabel.$gp_filename.map
