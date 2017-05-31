@@ -395,7 +395,7 @@ pacoxph -p $phenotypes/probabel.phenotypes \
 
 # Who is using prepABEL
 ---------------------
-**prepABEL** has been already used succesfully to perform a Genome-Wide Association Study of Survival in Patients with Idiopathic Pulmonary Fibrosis (IPF) in a subset of patients of European ancestry from a recent IPF GWAS, working with files of 39 million variants by 1,000 individuals.
+**prepABEL** has been already used succesfully to perform a Genome-Wide Association Study of Survival in Patients with Idiopathic Pulmonary Fibrosis (IPF) in a subset of patients of European ancestry from a recent IPF GWAS, working with VCF files of about 1,000 individuals by 39 million variants.
 See:
 ## _Genome-Wide Association Study of Survival in Patients with Idiopathic Pulmonary Fibrosis_
 
