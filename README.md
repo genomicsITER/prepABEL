@@ -93,9 +93,9 @@ source /etc/profile.d/profile.modules.sh
 module load probAbel/0.5
 # --------------------------------------------------------------------------------------------------------
 
-######################################################################################################################### #
-# Preparation of files required by probABEL to run Survival Analysis on dosage VCF files from Michigan Imputation Server  #
-######################################################################################################################### #
+#############################################################################################################
+# Preparing files for probABEL to run Survival Analysis on dosage VCF files from Michigan Imputation Server #
+#############################################################################################################
 # Description of pipeline:
 # 1. Prepare the SNP info file for probABEL
 # 2. Inspect imputed VCF file and chunk into smaller files (decide whether you lately will want chunked VCFs 
