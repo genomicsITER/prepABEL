@@ -15,7 +15,7 @@ prepABEL is being presented in the ATS 2017 Conference in Washington, 19-24 May,
 prepABEL will be available for downloading in June 1st, 2017. Please, feel free to contact me at "jlorsal" @ "gmail.com".
 
 <p align="center">
-  <img src="https://github.com/genomicsITER/prepABEL/blob/master/prepABEL_layout.png" width="400"/>
+  <img src="https://github.com/genomicsITER/prepABEL/blob/master/prepABEL_layout.png" width="auto"/>
 </p>
 
 <b>Figure 1</b>. PrepABEL is able to transpose vcf data into a genomic predictor file (a), and capture selected columns to prepare an INFO SNP (b) and MAP (c) files to conduct survival analysis.
