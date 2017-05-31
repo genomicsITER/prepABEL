@@ -66,27 +66,29 @@ module load probAbel/0.5
 ######################################################################################################################### #
 # Description of pipeline:
 # 1. Prepare the SNP info file for probABEL
-# 2. Inspect imputed VCF file and chunk into smaller files (decide whether you lately will want chunked VCFs with or without headers)
+# 2. Inspect imputed VCF file and chunk into smaller files (decide whether you lately will want chunked VCFs 
+#    with or without headers)
 # 3. Extract the list of individuals
 # 4. Build up a map file with ids, positions, ref and alt alleles for probABEL
 # 5. Iterate over the chunked VCF small files, and collect dosage data
 # 6. Paste all intermediate files to get a final Genomic Predictor file for probABEL
 # 7. Remove unnecessary files
-# 8. Auxiliary file operations: replace missing data with 'NA' and replace tabulators with spaces, if needed (uncomment lines)
+# 8. Auxiliary file operations: replace missing data with 'NA' and replace tabulators with spaces, if needed 
+#    (uncomment lines)
 
 # Unless you want to process everything within the same batch, write down the name of the chromosome imputed VCF file
 # Do not include file extensions
 #chromosome="chr1" # <--- UPDATE this variable with each chromosome under analysis if running in local mode
 
-echo "========================================================================"
-echo "=== 				                      prepABEL          		  	         ==="
-echo "===	 			                           v1               			     	   ==="
-echo "===    A program to prepare files for ProbABEL survival analyses     ==="
-echo "=== with dosage VCF imputation files from Michigan Imputation Server ==="
-echo "===       See more at: https://github.com/genomicsITER/prepABEL      ==="
-echo "===       		                 Genomics Division      		           ==="
-echo "===     Institute of Technology and Renewable Energy (ITER) 2017     ==="
-echo "========================================================================"
+echo "============================================================================"
+echo "=== 				                      prepABEL 				                       ==="
+echo "===	 			                           v1	 			                           ==="
+echo "===      A program to prepare files for ProbABEL survival analyses       ==="
+echo "===  with dosage VCF imputation files from Michigan Imputation Server    ==="
+echo "===         See more at: https://github.com/genomicsITER/prepABEL        ==="
+echo "===                           Genomics Division                          ==="
+echo "===       Institute of Technology and Renewable Energy (ITER) 2017       ==="
+echo "============================================================================"
 echo ""
 echo ""
 
@@ -102,7 +104,7 @@ root2=/path-to-base-dir/
 output=$root2/$chromosome
 coxph=$root2/coxph
 
-echo "============================= Path to files ============================="
+echo "================================ Path to files ================================"
 echo "Analyzing chromosome $chromosome"
 echo "Root path: $root1"
 echo "Output files saved to $output"
@@ -130,14 +132,15 @@ echo ""
 # A better strategy will be to chunk the imputed VCF file into smaller files
 # After collecting the necessary data, all chunked prepared files will be pasted altogether
 
-echo "============================= Inspection of VCF files ============================="
+echo "================================ Inspection of VCF files ================================"
 echo "Inspecting the size of the imputed VCF..."
 
 # Count the lines in file
 # a=$(wc -l $file | awk '{print $1}')
 # echo "The number of lines in the VCF file is: " $a
 
-# A conservative number of lines will be 75.000 for my laptop, considering 1000 individuals x 87500 lines = 87.500.000 variant values per file!
+# A conservative number of lines will be 75.000 for my laptop, considering 1000 individuals x 87500 lines = 
+# 87.500.000 variant values per file!
 # <<<<<< THIS NUMBER IS VERY IMPORTANT TO AVOID MEMORY LIMITATIONS >>>>>>
 number_lines=50000
 
@@ -188,8 +191,8 @@ echo "Extracting individuals from the VCF file as a row-vector..."
 # Take the last row of header, as determined by "number_of_lines_in_header"
 awk -v hd=$number_of_lines_in_header 'NR==hd {for (i=10 ; i<=NF ; i++) {printf("%s\t", $i)} print ""}' $output/header > $output/individuals
 
-# Transpose the row-vector of individuals as a column-vector, and insert an index as column 1 and the string "MLDOSE" as 
-# column 3
+# Transpose the row-vector of individuals as a column-vector, and insert an index as column 1 and the string "MLDOSE" 
+# as column 3
 # Reference for transposing a file: http://stackoverflow.com/questions/1729824/transpose-a-file-in-bash
 
 echo "Transposing the row-vector of individuals into a column-vector, inserting indexes and strings..."
@@ -218,7 +221,7 @@ echo ""
 # 4. Prepare a MAP file for probABEL #
 # ################################# #
 
-echo "============================= Preparing MAP file ============================="
+echo "================================ Preparing MAP file ================================"
 
 # Use 'variants' file (it does not have a header) and select columns to build up a map file
 
@@ -244,8 +247,8 @@ echo "Working file is $file"
 # Save chunked VCF filename into a temporal variable
 f=$file
 
-# Read the dosage VCF file, line by line, and extract the dosage field information for each SNP at each individual
-# Write the data into a SNP by individual matrix:
+# Read the dosage VCF file, line by line, and extract the dosage field information for each SNP 
+# at each individual. Write the data into a SNP by individual matrix:
 echo "Reading dosage VCF data..."
 
 # If chunked VCF have header, add "NR>10"
@@ -291,7 +294,7 @@ done
 # 6. Paste all intermediate files to get a final Genomic Predictor file for probABEL #
 # ################################################################################# #
 
-# Paste the matrix of index-individual-"MLDOSE" and dosage matrix to prepare the probABEL'genomic_predictor' file.
+# Paste the matrix of index-individual-"MLDOSE" and dosage matrix to prepare the probABEL 'genomic_predictor' file.
 echo "Pasting individuals and dose matrices into a genomic prediction file..."
 paste $output/t_individuals $output/variants_*.individuals_x_snps > $output/probabel.$gp_filename.gp
 
@@ -302,7 +305,7 @@ echo ""
 # 7. Paste all intermediate files to get a final Genomic Predictor file for probABEL #
 # ################################################################################# #
 
-echo "============================= Removal of temporal files ============================="
+echo "================================ Removal of temporal files ================================"
 
 # Remove intermediate files
 echo "Removing intermediate files..."
@@ -317,7 +320,7 @@ rm -f $output/variants
 # 8. Auxiliar file operations: replace missing data with "NA" and replace tabs with spaces #
 # ######################################################################################## #
 
-echo "============================= Replace tabs with spaces. Ending of prepABEL ============================="
+echo "================================ Replace tabs with spaces. Ending of prepABEL ================================"
 
 # Replace missing data with 'NA' within phenotype file. If necessary, uncomment next line
 #awk 'BEGIN { FS = OFS = "\t" } { for(i=1; i<=NF; i++) if($i ~ /^ *$/) $i = "NA" }; 1' $phenotypes/phenotypes_revised.csv > $phenotypes/phenotypes_revised_noNA.csv
@@ -340,7 +343,7 @@ mv $output/probabel.$gp_filename.spaces.info $output/probabel.$gp_filename.info
 mv $output/probabel.$gp_filename.spaces.gp $output/probabel.$gp_filename.gp
 mv $output/probabel.$gp_filename.spaces.map $output/probabel.$gp_filename.map
 
-echo "============================= End of Script ============================="
+echo "================================ End of Script ================================"
 
 
 # ########################################### #
