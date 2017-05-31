@@ -14,3 +14,5 @@ prepABEL is being presented in the ATS 2017 Conference in Washington, 19-24 May,
 
 prepABEL will be available for downloading in June 1st, 2017. Please, feel free to contact me at "jlorsal" @ "gmail.com".
 
+![prepABEL layout](https://github.com/genomicsITER/prepABEL/blob/master/prepABEL_layout.png)
+
