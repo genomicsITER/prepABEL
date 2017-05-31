@@ -18,9 +18,7 @@
 
 Some other tools such as VCFtools (https://vcftools.github.io) lets one to grab defined fields (see _--extract-FORMAT-info_ filtering options) and thus extract a large matrix of genotypes or imputed genotype doses (or probabilities), but still a matrix tranpose operation is required to work with _ProABEL_. And it needs installation while **prepABEL** runs as is!
 
-**prepABEL** has been presented in the ATS 2017 Conference in Washington, 19-24 May, 2017. It has been developed by our staff at the Genomics Divion of the Institute of Energy and Renewable Energy (ITER), Tenerife, Canary Islands, SPAIN.
 
-**prepABEL** code is available below. Please, feel free to contact me at "jlorsal" @ "gmail.com" for any further information. 
 <p><br></p>
 <p align="center">
   <img src="https://github.com/genomicsITER/prepABEL/blob/master/prepABEL_layout.png" width="auto"/>
@@ -29,6 +27,11 @@ Some other tools such as VCFtools (https://vcftools.github.io) lets one to grab 
 <p align="center">
 <b>Figure 1. prepABEL</b> is able to transpose vcf data into a genomic predictor file (a), and capture selected columns to prepare an INFO SNP (b) and MAP (c) files to conduct survival analysis.
 </p>
+<br>
+<br>
+**prepABEL** has been presented in the ATS 2017 Conference in Washington, 19-24 May, 2017. It has been developed by our staff at the Genomics Divion of the Institute of Energy and Renewable Energy (ITER), Tenerife, Canary Islands, SPAIN.
+
+**prepABEL** code is available below. Please, feel free to contact me at "jlorsal" @ "gmail.com" for any further information. 
 <br>
 <br>
 <br>
