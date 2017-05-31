@@ -29,8 +29,8 @@ Some other tools such as VCFtools (https://vcftools.github.io) lets one to grab 
 <br>
 <br>
 
-# _Citation_
-
+# Citation
+----------
 Please, cite **prepABEL** as follows:
 
 ## _PrepABEL: A Bioinformatic Tool for Preprocessing Imputed Genotype Dosage Data for Survival Analyses_
@@ -45,6 +45,7 @@ May 19-24, 2017, Washington DC, USA
 <br>
 
 # How to run prepABEL
+---------------------
 **prepABEL** code is shown below. Copy and paste this code into a plain-text file and name it as 'prepABEL.sh'. An example is provided here: https://github.com/genomicsITER/prepABEL/blob/master/prepABEL_v1.sh
 
 To run **prepABEL**, open a shell console (in most Linux systems, press CTRL+ALT+T keys simultaneously) and call BASH as follows:
@@ -56,7 +57,7 @@ bash prepABEL_v1.sh
 <br>
 
 # Code
-
+------
 ```Bash
 #!/bin/bash
 # --------------------------------------------------------------------------------------------------------
