@@ -17,3 +17,6 @@ prepABEL will be available for downloading in June 1st, 2017. Please, feel free 
 ![prepABEL layout](https://github.com/genomicsITER/prepABEL/blob/master/prepABEL_layout.png)
 Figure 1. PrepABEL is able to transpose vcf data into a genomic predictor file (a), and capture selected columns to prepare an INFO SNP (b) and MAP (c) files to conduct survival analysis.
 
+<p align="center">
+  <img src="https://github.com/genomicsITER/prepABEL/blob/master/prepABEL_layout.png" width="400"/>
+</p>
