@@ -21,3 +21,9 @@ prepABEL will be available for downloading in June 1st, 2017. Please, feel free 
 <b>Figure 1</b>. PrepABEL is able to transpose vcf data into a genomic predictor file (a), and capture selected columns to prepare an INFO SNP (b) and MAP (c) files to conduct survival analysis.
 
 
+# Citation
+Please, cite prepABEL as follows:
+# PrepABEL: A Bioinformatic Tool for Preprocessing Imputed Genotype Dosage Data for Survival Analyses
+American Thoracic Society International Conference, A6796
+May 19-24, 2017, Washington DC, USA
+J. Lorenzo-Salazar, S.F. Ma, J. M. Oldham, I. Noth, and C. Flores
