@@ -29,7 +29,7 @@ Some other tools such as VCFtools (https://vcftools.github.io) lets one to grab 
 </p>
 <br>
 <br>
-**prepABEL** has been presented in the ATS 2017 Conference in Washington, 19-24 May, 2017. It has been developed by our staff at the Genomics Divion of the Institute of Energy and Renewable Energy (ITER), Tenerife, Canary Islands, SPAIN.
+<b>prepABEL</b> has been presented in the ATS 2017 Conference in Washington, 19-24 May, 2017. It has been developed by our staff at the Genomics Divion of the Institute of Energy and Renewable Energy (ITER), Tenerife, Canary Islands, SPAIN.
 
 **prepABEL** code is available below. Please, feel free to contact me at "jlorsal" @ "gmail.com" for any further information. 
 <br>
