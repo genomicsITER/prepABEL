@@ -56,7 +56,7 @@ May 19-24, 2017, Washington DC, USA
 
 # Who is using prepABEL
 ---------------------
-**prepABEL** has been already used succesfully to perform a Genome-Wide Association Study of Survival in Patients with Idiopathic Pulmonary Fibrosis (IPF) in a subset of patients of European ancestry from a recent IPF GWAS, working with VCF files of about 1,000 individuals by 39 million variants.
+**prepABEL** has been succesfully used to perform a Genome-Wide Association Study of Survival in Patients with Idiopathic Pulmonary Fibrosis (IPF) in a subset of patients of European ancestry from a recent IPF GWAS, working with VCF files of about 1,000 individuals by 39 million variants.
 See:
 ## _Genome-Wide Association Study of Survival in Patients with Idiopathic Pulmonary Fibrosis_
 
